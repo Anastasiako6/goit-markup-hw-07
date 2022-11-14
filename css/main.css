@@ -303,18 +303,8 @@ body {
   fill: var(--accent-text-color);
 }
 
-.header {
-  border: 1px solid #ECECEC;
-}
-
-.header-cont {
-  display: flex;
-  align-items: center;
-}
-
 /*----------------logo----------- */
-.header-logo-link {
-  margin-right: 93px;
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -322,7 +312,7 @@ body {
   color: var(--part-title-color);
 }
 
-.header-logo-part {
+.logo__part {
   color: var(--accent-text-color);
 }
 
@@ -330,8 +320,35 @@ body {
   color: var(--accent-text-color);
 }
 
+.navigation__logo {
+  margin-right: 93px;
+}
+
+.header {
+  border: 1px solid #ECECEC;
+}
+
+.header__cont {
+  display: flex;
+  align-items: center;
+}
+
 /* -----------nav----------- */
-.header-nav-item {
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+}
+.menu .link.current {
+  color: var(--accent-text-color);
+  position: relative;
+}
+
+.menu__link {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -340,28 +357,7 @@ body {
   color: var(--title-text-color);
   transition: color 250ms var(--cubic);
 }
-
-.nav-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-nav-item:hover,
-.header-nav-item:focus {
-  color: var(--accent-text-color);
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-nav-list {
-  display: flex;
-  margin-left: auto;
-}
-
-.current {
-  position: relative;
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-text-color);
 }
 
@@ -377,12 +373,13 @@ body {
 }
 
 /* ----------communicatuion-list-------- */
-.header-communication-list {
+.communication {
   display: flex;
   margin-left: auto;
+  gap: 50px;
 }
 
-.header-communication-item {
+.communication__item {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -393,13 +390,11 @@ body {
   color: var(--primary-text-color);
   transition: color 250ms var(--cubic);
 }
-
-.header-communication-item:hover,
-.header-communication-item:focus {
+.communication__item:hover, .communication__item:focus {
   color: var(--accent-text-color);
 }
 
-.header-icons {
+.communication__icons {
   margin-right: 10px;
   fill: currentColor;
 }
