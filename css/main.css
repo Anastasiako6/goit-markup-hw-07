@@ -411,7 +411,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
   max-width: 696px;
   margin: 0 auto 30px auto;
@@ -451,12 +451,12 @@ body {
   color: var(--primary-white-color);
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
   gap: 30px;
 }
 
-.benefits-box {
+.benefits__box {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -467,7 +467,7 @@ body {
   align-items: center;
 }
 
-.benefits-item {
+.benefits__item {
   display: block;
   justify-content: center;
   align-items: center;
