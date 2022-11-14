@@ -1,16 +1,18 @@
-.work-example-list {
-    display: flex;
-}
 
 .work-example {
     padding-top: 0;
+}
+
+.example {
+    display: flex;
+    gap: 30px;
 }
 
 .padding-title {
     margin-bottom: 50px;
 }
 
-.example-item {
+.example__item {
     position: relative;
 }
 
